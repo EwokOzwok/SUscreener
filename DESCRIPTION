@@ -1,0 +1,19 @@
+Package: SUscreener
+Title: Substance Use Screener
+Version: 1.0.0000
+Authors@R: person('Evan', 'Ozmat', email = 'Eozmat@albany.edu', role = c('cre', 'aut'))
+Description: This web-app uses several substance use screening tools to assess for risk of SUDs.
+License: Apache License (>= 2)
+Imports: 
+    config (>= 0.3.2),
+    dplyr,
+    golem (>= 0.4.1),
+    htmltools,
+    shiny (>= 1.8.0),
+    shinyalert
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
