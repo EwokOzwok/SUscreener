@@ -1,0 +1,12 @@
+name: SUScreener
+title: SUScreener
+username: ualbanyprojectaccess
+account: ualbanyprojectaccess
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10572097
+bundleId: 7945200
+url: https://ualbanyprojectaccess.shinyapps.io/SUScreener/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -13,7 +13,6 @@ Imports:
     dplyr,
     golem (>= 0.4.1),
     htmltools,
-    pkgload,
     shiny (>= 1.8.0),
     shinyalert,
     shinyMobile,
