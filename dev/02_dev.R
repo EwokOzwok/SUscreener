@@ -61,6 +61,7 @@ covrpage::covrpage()
 ## service for your application
 ##
 ## (You'll need GitHub there)
+usethis::use_git()
 usethis::use_github()
 
 # GitHub Actions
