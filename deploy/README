@@ -1,5 +1,4 @@
 docker build -f Dockerfile_base --progress=plain -t suscreener_base .
 docker build -f Dockerfile --progress=plain -t suscreener:latest .
-docker run -p 3838:3838 suscreener:latest
-docker run -p 3838:3838 --name SUScreener.slim suscreener.slim:latest
-# then go to 127.0.0.1:3838
+docker run -p 80:80 suscreener:latest
+# then go to 127.0.0.1:80

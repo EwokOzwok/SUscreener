@@ -12,6 +12,8 @@ Imports:
     config (>= 0.3.2),
     dplyr,
     golem (>= 0.4.1),
+    googledrive,
+    googlesheets4,
     htmltools,
     shiny (>= 1.8.0),
     shinyalert,
