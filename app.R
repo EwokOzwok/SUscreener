@@ -3,5 +3,17 @@
 # Or use the blue button on top of this file
 
 pkgload::load_all(export_all = FALSE,helpers = FALSE,attach_testthat = FALSE)
-options( "golem.app.prod" = TRUE)
+options( "golem.app.prod" = TRUE,
+         gargle_oauth_email = TRUE,
+         # specify auth tokens should be stored in a hidden directory ".secrets"
+         gargle_oauth_cache = "SUscreener/.secrets")
 SUscreener::run_app() # add parameters here (if any)
+
+
+
+# googledrive::drive_auth()
+# googlesheets4::gs4_auth()
+# googlesheets4::gs4_create(name = "SUScreenerTest",
+#                           # Create a sheet called main for all data to
+#                           # go to the same place
+#                           sheets = c("AUDIT","CAGE-C"))

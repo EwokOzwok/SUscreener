@@ -8,8 +8,7 @@
 #' @importFrom shinyalert shinyalert
 #' @noRd
 app_server <- function(input, output, session) {
-
-
+sheet_id <- googledrive::drive_get("SUScreenerTest")$id
 
   # Your application server logic
   AUDITdata<-data.frame(matrix(NA, nrow=1,ncol = 11))
@@ -163,10 +162,21 @@ app_server <- function(input, output, session) {
       AUDITdata$AUDIT11<-ifelse(AUDITdata$AUDIT11==3,4,AUDITdata$AUDIT11)
       AUDITdata$Total_AUDIT<-AUDITdata$AUDIT1+AUDITdata$AUDIT2+AUDITdata$AUDIT3+AUDITdata$AUDIT4+AUDITdata$AUDIT5+AUDITdata$AUDIT6+AUDITdata$AUDIT7+AUDITdata$AUDIT8+AUDITdata$AUDIT9+AUDITdata$AUDIT10
       print(AUDITdata)
+
+      exportAudit<-as.data.frame(AUDITdata)
+      googlesheets4::sheet_append(data = exportAudit,
+                                  ss=sheet_id,
+                                  sheet="AUDIT")
+
       if (input$CannaSkipper == "Yes"){
         updateF7Tabs(session = session, id = "tabs", selected = "CAGEctab")
       } else {
         updateF7Tabs(session = session, id = "tabs", selected = "DoneTab")
+        skippedcanna<-as.data.frame(matrix(data=NA, nrow=1,ncol=5))
+        skippedcanna[1,1:5]<-c("NA")
+        googlesheets4::sheet_append(data = skippedcanna,
+                                    ss=sheet_id,
+                                    sheet="CAGE-C")
       }
 
 
@@ -398,6 +408,11 @@ app_server <- function(input, output, session) {
       CAGEcdata<-as.data.frame(CAGEcdata)
       CAGEcdata$Total_CAGEc<-CAGEcdata$CAGEc1+CAGEcdata$CAGEc2+CAGEcdata$CAGEc3+CAGEcdata$CAGEc4
       print(CAGEcdata)
+
+      googlesheets4::sheet_append(data = CAGEcdata,
+                                  ss=sheet_id,
+                                  sheet="CAGE-C")
+
       updateF7Tabs(session = session, id = "tabs", selected = "DoneTab")
 
 
