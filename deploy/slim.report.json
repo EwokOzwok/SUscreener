@@ -21,7 +21,7 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:a77118c6b0c5db8822e5611e90252827d8a5a51def7739e52aacabd883ce61a1",
+      "id": "sha256:bd77f4ea029a343ffad9d22436318bf75babff33c14c63541353116d9a2447e6",
       "tags": [
         "latest"
       ],
@@ -29,9 +29,9 @@
         "suscreener:latest"
       ]
     },
-    "size": 4197590914,
+    "size": 4199527823,
     "size_human": "4.2 GB",
-    "create_time": "2023-11-23T02:39:07Z",
+    "create_time": "2023-11-23T02:43:38Z",
     "docker_version": "",
     "architecture": "amd64",
     "exposed_ports": [
@@ -69,27 +69,27 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 517233628,
+  "minified_image_size": 517319879,
   "minified_image_size_human": "517 MB",
   "minified_image": "suscreener.slim",
   "minified_image_has_data": true,
-  "minified_by": 8.11546405099554,
-  "artifact_location": "/tmp/slim-state/.slim-state/images/a77118c6b0c5db8822e5611e90252827d8a5a51def7739e52aacabd883ce61a1/artifacts",
+  "minified_by": 8.117855109526923,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/bd77f4ea029a343ffad9d22436318bf75babff33c14c63541353116d9a2447e6/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "suscreener-seccomp.json",
   "apparmor_profile_name": "suscreener-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:a77118c6b0c5db8822e5611e90252827d8a5a51def7739e52aacabd883ce61a1",
+      "id": "sha256:bd77f4ea029a343ffad9d22436318bf75babff33c14c63541353116d9a2447e6",
       "full_name": "suscreener:latest",
       "repo_name": "suscreener",
       "version_tag": "latest",
       "raw_tags": [
         "suscreener:latest"
       ],
-      "create_time": "2023-11-23T02:39:07Z",
-      "new_size": 4197590914,
+      "create_time": "2023-11-23T02:43:38Z",
+      "new_size": 4199527823,
       "new_size_human": "4.2 GB",
       "instructions": [
         {
@@ -732,7 +732,7 @@
         },
         {
           "type": "COPY",
-          "time": "2023-11-23T02:36:25Z",
+          "time": "2023-11-23T02:41:00Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -749,11 +749,11 @@
         },
         {
           "type": "RUN",
-          "time": "2023-11-23T02:36:59Z",
+          "time": "2023-11-23T02:41:30Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 390853877,
+          "size": 390854539,
           "size_human": "391 MB",
           "command_snippet": "RUN R -e 'renv::restore()'",
           "command_all": "RUN R -e 'renv::restore()'",
@@ -768,7 +768,7 @@
         },
         {
           "type": "COPY",
-          "time": "2023-11-23T02:37:05Z",
+          "time": "2023-11-23T02:41:35Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -785,11 +785,11 @@
         },
         {
           "type": "RUN",
-          "time": "2023-11-23T02:37:11Z",
+          "time": "2023-11-23T02:41:41Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 200588512,
+          "size": 200588044,
           "size_human": "201 MB",
           "command_snippet": "RUN R -e 'renv::restore()'",
           "command_all": "RUN R -e 'renv::restore()'",
@@ -804,7 +804,7 @@
         },
         {
           "type": "COPY",
-          "time": "2023-11-23T02:37:11Z",
+          "time": "2023-11-23T02:41:41Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -821,12 +821,12 @@
         },
         {
           "type": "RUN",
-          "time": "2023-11-23T02:39:07Z",
+          "time": "2023-11-23T02:43:37Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 85397761,
-          "size_human": "85 MB",
+          "size": 87334476,
+          "size_human": "87 MB",
           "command_snippet": "RUN R -e 'remotes::install_github(\"EwokOzwok...",
           "command_all": "RUN R -e 'remotes::install_github(\"EwokOzwok/SUScreener\")'",
           "system_commands": [
@@ -840,7 +840,7 @@
         },
         {
           "type": "RUN",
-          "time": "2023-11-23T02:39:07Z",
+          "time": "2023-11-23T02:43:38Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -858,7 +858,7 @@
         },
         {
           "type": "EXPOSE",
-          "time": "2023-11-23T02:39:07Z",
+          "time": "2023-11-23T02:43:38Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -874,7 +874,7 @@
         },
         {
           "type": "CMD",
-          "time": "2023-11-23T02:39:07Z",
+          "time": "2023-11-23T02:43:38Z",
           "is_last_instruction": true,
           "is_nop": false,
           "local_image_exists": true,
